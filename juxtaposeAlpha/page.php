@@ -1,0 +1,1 @@
+//displays static pages, e.g., about page, etc
