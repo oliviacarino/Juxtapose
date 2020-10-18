@@ -50,7 +50,7 @@ html {
 }
 body {
     color: var(--secondary);
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 a{
     color: var(--white-gray);
@@ -62,7 +62,7 @@ h4,
 h5,
 h6 {
     color: var(--gray-dark);
-    font-weight: bold
+    font-weight: bold;
 }
 
 .btn {
@@ -101,8 +101,8 @@ h6 {
 .header {
     /* position: fixed; */
     left: 0;
-    top: 0;
-    height: 20vh;
+    /* top: 0; */
+    height: 5vh;
     width: 100%;
     /* width: var(--sidebar-width); */
     background: var(--primary);
@@ -236,7 +236,8 @@ h6 {
 } */
 
 #copyright-color {
-    color: #484848;
+    color: var(--white);
+    text-decoration: none;
 }
 
 .content .post .title {
