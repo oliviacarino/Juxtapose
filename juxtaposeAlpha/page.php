@@ -1,1 +1,1 @@
-//displays static pages, e.g., about page, etc
+//template page for About, Donate, Subscribe, and Contact Us all on one password

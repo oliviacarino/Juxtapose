@@ -1,365 +1,247 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Blog Site Template</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Site Template">
-    <meta name="author" content="Olivia Carino">
-    <link rel="shortcut icon" href="images/logo.png">
-
-    <!-- Load custom css, Bootstrap, and FontAwesome -->
-    <?php
-    wp_head();
-    ?>
-
-</head>
-
-<body>
-    <header class="header text-center pl-4">
-
-        <nav class="navbar navbar-expand-lg navbar-dark mt-4 fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-                aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex-column pl-4">
-                <div id="navigation" class="collapse navbar-collapse flex-row pl-4">
-                    <a class="site-title mr-4 pt-lg-0 mb-0" href="index.html"><img class="mb-3 mx-auto logo"
-                            src="images/logo.png" alt="logo"></a>
-
-                    <ul class="navbar-nav flex-row text-sm-center text-md-left pl-4 pb-3">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">
-                                Home <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="page.html">
-                                About
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Donate
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="archive.html">
-                                Archive
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn" href="contact.html">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
-                    <form class="form-inline pl-4 ml-4 pb-3">
-                        <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-    </header>
-
-    <div class="main-wrapper">
-
-        <header class="page-title theme-bg-light text-center py-3">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div id="navigation" class="justify-content-center collapse navbar-collapse flex-row">
-                    <ul class="navbar-nav flex-row">
-                        <li class="category-item nav-item active px-3">
-                            <a class="nav-link" href="#"><span class="border-underline"><strong>News</strong></span></a>
-                        </li>
-                        <li class="category-item nav-item active px-3">
-                            <a class="nav-link" href="#"><span
-                                    class="border-underline"><strong>Sports</strong></span></a>
-                        </li>
-                        <li class="category-item nav-item active px-3">
-                            <a class="nav-link" href="#"><span
-                                    class="border-underline"><strong>Education</strong></span></a>
-                        </li>
-                        <li class="category-item nav-item active px-3">
-                            <a class="nav-link" href="#"><span
-                                    class="border-underline"><strong>Opinion</strong></span></a>
-                        </li>
-                        <li class="category-item nav-item active px-3">
-                            <a class="nav-link" href="#"><span
-                                    class="border-underline"><strong>E-Edition</strong></span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <article class="content mt-0 px-3 p-md-5">
+<?php
+get_header();
+?>
+        <article class="content mt-0 px-3 mx-4 p-md-4">
             <!-- Container 1 -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-3 mt-3">
-                        <h4 class="card-title mb-2 text-center">Top Stories</h4>
-                        <div class="shadow-sm card mb-2">
+            <!-- <div class="container">
+                <div class="row mt-md-0">
+                    <div class="col-md-5 mt-5">
+                        <div class="shadow-sm card mb-4">
+                            <h4 class="card-title mb-md-2 pt-4 text-center">Top Stories</h4>
                             <div class="card-body">
-                                <h5 class="card-title">Top Story</h5>
-                                <p class="card-text">Aron Pilhofer dead trees learnings paidContent </p>
+                                <h5 class="card-title">Top Story #1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    semper risus a purus ultrices convallis.</p>
+                                <a class="read-more-link" href="#">Read More ></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Top Story #2</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    semper risus a purus ultrices convallis.</p>
+                                <a class="read-more-link" href="#">Read More ></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Top Story #3</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    semper risus a purus ultrices convallis. </p>
+                                <a class="read-more-link" href="#">Read More ></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Top Story #4</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    semper risus a purus ultrices convallis.</p>
+                                <a class="read-more-link" href="#">Read More ></a>
                             </div>
                         </div>
-
-                        <div class="shadow-sm card mb-2">
+                        <div class="card text-left shadow-sm mb-4">
+                            <img class="card-img-top"
+                                src="wp-content/themes/juxtaposeAlpha/assets/images/policeTape.jpg"
+                                alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Top Story</h5>
-                                <p class="card-text">Aron Pilhofer dead trees learnings paidContent </p>
+                                <h5 class="card-title">Story Title #2</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    semper risus a purus ultrices convallis. Nullam semper orci sed faucibus
+                                    lobortis. Ut vel luctus eros, ut suscipit ipsum. Pellentesque pulvinar neque ac
+                                    vulputate placerat. Pellentesque eu ligula nec sem ullamcorper dapibus in nec
+                                    risus. Nulla magna mi.
+                                </p>
+                                <a class="read-more-link" href="#"><strong>Continue Reading</strong></a>
                             </div>
-                        </div>
-                        <div class="shadow-sm card mb-2">
-                            <div class="card-body">
-                                <h5 class="card-title">Top Story</h5>
-                                <p class="card-text">Aron Pilhofer dead trees learnings paidContent </p>
-                            </div>
-                        </div>
-                        <div class="shadow-sm card mb-2">
-                            <div class="card-body">
-                                <h5 class="card-title">Top Story</h5>
-                                <p class="card-text">Aron Pilhofer dead trees learnings paidContent </p>
+                            <div class="card-footer text-muted">
+                                By Local Newspaper /Date/
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mt-5">
-                        <div class="col mb-3">
-                            <div class="card text-left shadow-sm">
-                                <img class="card-img-top" src="images/cdc.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Story Title</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to
-                                        additional
-                                        content.
-                                    </p>
-                                    <a class="read-more-link" href="#"><strong>Continue Reading</strong></a>
-                                    <!-- <a href="#" class="btn btn-primary py-2">Read More</a> -->
-                                </div>
-                                <div class="card-footer text-muted">
-                                    By Local Newspaper /Date/
-                                </div>
+                    <div class="col-md-5 mt-md-5">
+                        <div class="card text-left shadow-sm mb-4">
+                            <img class="card-img-top" src="wp-content/themes/juxtaposeAlpha/assets/images/cdc.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Story Title #1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    semper risus a purus ultrices convallis. Nullam semper orci sed faucibus
+                                    lobortis. Ut vel luctus eros, ut suscipit ipsum. Pellentesque pulvinar neque ac
+                                    vulputate placerat. Pellentesque eu ligula nec sem ullamcorper dapibus in nec
+                                    risus. Nulla magna mi.
+                                </p>
+                                <a class="read-more-link" href="#"><strong>Continue Reading</strong></a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                By Local Newspaper /Date/
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card text-left shadow-sm">
-                                <img class="card-img-top" src="images/cdc.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Story Title</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to
-                                        additional
-                                        content.
-                                    </p>
-                                    <a class="read-more-link" href="#"><strong>Continue Reading</strong></a>
-                                    <!-- <a href="#" class="btn btn-primary py-2">Read More</a> -->
-                                </div>
-                                <div class="card-footer text-muted">
-                                    By Local Newspaper /Date/
-                                </div>
+                        <div class="card text-left shadow-sm mb-4">
+                            <img class="card-img-top"
+                                src="wp-content/themes/juxtaposeAlpha/assets/images/covidTestingSign.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Story Title #3</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    semper risus a purus ultrices convallis. Nullam semper orci sed faucibus
+                                    lobortis. Ut vel luctus eros, ut suscipit ipsum. Pellentesque pulvinar neque ac
+                                    vulputate placerat. Pellentesque eu ligula nec sem ullamcorper dapibus in nec
+                                    risus. Nulla magna mi. Ut vel luctus eros, ut suscipit ipsum.
+                                </p>
+                                <a class="read-more-link" href="#"><strong>Continue Reading</strong></a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                By Local Newspaper /Date/
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card mb-2 mt-5 shadow-sm">
+                    <div class="col-md-2 mt-md-5">
+                        <div class="card mb-4 shadow-sm">
                             <div class="card-body">
-                                <h5 class="card-title">Newsletter Sign up</h5>
-                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
+                                <h5 class="card-title text-center">Newsletter Signup</h5>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Ad Space</h5>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm">
+                        <h5 class="card-title mb-2 pt-4 text-center">Trending Stories</h5>
+                            <div class="card-body">
+                                <h6 class="card-title">Story #1</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    semper risus a purus ultrices convallis.</p>
+                                <a class="read-more-link" href="#">Read More ></a>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Story #2</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="read-more-link" href="#">Read More ></a>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Story #3</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    semper risus a purus ultrices convallis.</p>
+                                <a class="read-more-link" href="#">Read More ></a>
+                            </div>
+                        </div>
+                        <div class="card mb-3 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Poll</h5>
                             </div>
                         </div>
                         <div class="card mb-2 shadow-sm">
                             <div class="card-body">
-                                <h5 class="card-title">Ad Space</h5>
-                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
-                            </div>
-                        </div>
-                        <div class="card mb-2 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Trending Stories</h5>
-                            </div>
-                        </div>
-                        <div class="card mb-2 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Trending Stories</h5>
-                            </div>
-                        </div>
-                        <div class="card mb-2 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Trending Stories</h5>
+                                <h5 class="card-title text-center">Ad Space</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Second Container for Ad Space -->
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
-                    <div class="col-12 mt-3">
-                        <div class="card text-center shadow-sm">
+                    <div class="col-md-10 my-md-3">
+                        <div class="card text-center shadow-sm py-3">
                             <div class="card-body">
                                 <h5 class="card-title">Ad Space</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
             <!-- Third Container -->
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row mt-4">
-                    <div class="col-4 mb-3">
+                    <div class="col-md-5 mb-3">
                         <div class="card text-left shadow-sm">
-                            <div class="card-header">
-                                Local News
+                            <div class="card-header text-center">
+                                <strong>Local News</strong>
                             </div>
-                            <img class="card-img-top" src="images/cdc.jpg" alt="Card image cap">
+                            <img class="card-img-top"
+                                src="wp-content/themes/juxtaposeAlpha/assets/images/peopleWalking.jpg"
+                                alt="Card image cap">
 
 
                             <div class="card-body pb-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                                <div class="card-body">
+                                    <p>Headline #1</p>
                                 </div>
                             </div>
                             <div class="card-body pb-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                                <div class="card-body">
+                                    <p>Headline #2</p>
                                 </div>
                             </div>
                             <div class="card-body pb-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                                <div class="card-body">
+                                    <p>Headline #3</p>
                                 </div>
                             </div>
                             <div class="card-body pb-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                                <div class="card-body">
+                                    <p>Headline #4</p>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                            <div class="card-body pb-0">
+                                <div class="card-body">
+                                    <p>Headline #5</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 mb-3">
+                    <div class="col-md-5 mb-3">
                         <div class="card text-left shadow-sm">
-                            <div class="card-header">
-                                Sports
+                            <div class="card-header text-center">
+                                <strong>Sports</strong>
                             </div>
-                            <img class="card-img-top" src="images/cdc.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="wp-content/themes/juxtaposeAlpha/assets/images/sports.jpg"
+                                alt="Card image cap">
 
-
                             <div class="card-body pb-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                                <div class="card-body">
+                                    <p>Headline #1</p>
                                 </div>
                             </div>
                             <div class="card-body pb-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                                <div class="card-body">
+                                    <p>Headline #2</p>
                                 </div>
                             </div>
                             <div class="card-body pb-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                                <div class="card-body">
+                                    <p>Headline #3</p>
                                 </div>
                             </div>
                             <div class="card-body pb-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                                <div class="card-body">
+                                    <p>Headline #4</p>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p>Headline</p>
-                                    </div>
+                            <div class="card-body pb-0">
+                                <div class="card-body">
+                                    <p>Headline #5</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card mb-3 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Poll</h5>
-                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
-                            </div>
-                        </div>
-                        <div class="card mb-2 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title">Ad Space</h5>
-                                <img class="card-img-top" src="images/placeholder.png" alt="Card image cap">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+            <!-- fetch a post via Wordpress Loop-->
+            <?php
+                if( have_posts() ) {
+                    while ( have_posts() ) {
+                        the_post();
+                        the_content(); //grabs content from post and inserts it
+                    }
+                }
+            ?>
 
 
         </article>
-        <!--Newsletter-->
-        <section class="theme-bg-dark py-4 mt-4 pl-4 text-left">
-            <h3 class='text-dark d-block py-1'>Subscribe to the Daily Newsletter</h3>
-            <p>Receive breaking news and updates to important stories. </p>
-            <form class="signup-form form-inline justify-content-left pt-4">
-                <div class="form-group">
-                    <label class="sr-only" for="semail">Your email</label>
-                    <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail"
-                        placeholder="Enter email">
-                </div>
-                <button type="submit" class="btn btn-primary ml-2">Subscribe</button>
+        
 
+<?php
+get_footer();
+?>
 
-
-            </form>
-        </section>
-        <footer class="footer text-center py-4">
-
-            <p class="copyright pt-4 pb-0"><a id="copyright-color" href="#">Juxtapose &copy; - Olivia Carino, Ev
-                    Andrews &amp; Alison Jibilian</a></p>
-
-            <a id="copyright-color" href="#" target="_blank">
-                <p class="copyright">Follow us on <u>Twitter</u></p>
-            </a>
-        </footer>
-
-    </div>
-
-
-    <!-- JS -->
-    <?php
-        wp_footer();
-    ?>
-
-
-</body>
-
-</html>
+    

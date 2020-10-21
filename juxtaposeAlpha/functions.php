@@ -1,5 +1,25 @@
 <?php
 
+function juxtaposeAlpha_theme_support(){
+    // Adds dynamic title tag support
+    add_theme_support('title-tag');
+
+}
+add_action('after_setup_theme', 'juxtaposeAlpha_theme_support');
+
+
+function juxtaposeAlpha_menus() {
+
+    $locations = array (
+        'primary' => "Desktop Primary Top Navbar",
+        'category' => "Category Menu Items"
+    );
+
+    register_nav_menus($locations);
+}
+add_action('init', 'juxtaposeAlpha_menus');
+
+
 function juxtaposeAlpha_register_styles() {
 
     $version = wp_get_theme() ->get('Version' );

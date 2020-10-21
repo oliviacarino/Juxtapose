@@ -35,7 +35,7 @@ Author URI: [insert URL for portfolio, nmi, etc or whatever]
     --font-normal: 1em;
     --font-small: 0.8125rem;
     /* Sidebar */
-    --sidebar-width: 280px;
+    /* --sidebar-width: 280px; */
     /* --content-max-width: 960px; */
 }
 
@@ -102,17 +102,18 @@ h6 {
     /* position: fixed; */
     left: 0;
     /* top: 0; */
-    height: 5vh;
+    height: 10vh;
     width: 100%;
     /* width: var(--sidebar-width); */
     background: var(--primary);
-    color: #fff
+    color: #fff;
 }
 .header .site-title {
     color:var(--white);
     font-size:1.2em;
-    /* display:inline-block; */
-    /* width: 70%; */
+    position: relative;
+    /* display:inline;
+    width: 70%; */
 }
 
 .header .btn-primary {
@@ -135,7 +136,8 @@ h6 {
   }
 
 .header .navbar {
-    padding: 0;
+    /* padding: 0; */
+    background-color: var(--primary);
 }
 
 .header .navbar-dark .navbar-toggler {
@@ -180,10 +182,10 @@ h6 {
 }
 
 
-
 .logo{
     width:150px;
 }
+
 .social-list a {
     width: 32px;
     height: 32px;
@@ -220,7 +222,8 @@ h6 {
 .page-title .heading {
     font-size: 2rem;
     font-weight: bold;
-    color:white;
+    color: var(--dark);
+    margin-left: 1em;
 }
 
 .footer {
@@ -234,6 +237,7 @@ h6 {
 /* .background-color{
     background-color: var(--primary);
 } */
+
 
 #copyright-color {
     color: var(--white);
@@ -386,6 +390,7 @@ h6 {
 .read-more-link {
     color: #434242;
     text-decoration: underline;
+    font-weight: 600;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -396,6 +401,11 @@ h6 {
         transition: none
     }
 }
+
+/* Mobile */
+/* @media (max-width: 480px) {
+    
+} */
 
 @media (min-width: 768px) {
    
