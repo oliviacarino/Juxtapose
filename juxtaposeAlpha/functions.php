@@ -7,7 +7,7 @@ function juxtaposeAlpha_theme_support(){
 }
 add_action('after_setup_theme', 'juxtaposeAlpha_theme_support');
 
-
+//setup and register menus
 function juxtaposeAlpha_menus() {
 
     $locations = array (
@@ -44,4 +44,13 @@ function juxtaposeAlpha_register_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'juxtaposeAlpha_register_scripts');
 
+?>
+
+
+<!-- Register Custom Navigation Walker --- adds Bootstrap navbar -->
+<?php
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
 ?>
