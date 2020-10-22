@@ -104,6 +104,11 @@ h6 {
     color: white;
     font-weight: 500;
 }
+.svg-style {
+    width: 12%;
+    height: auto;
+    margin: 0 1rem 0 1rem;
+}
 
 
 .header {

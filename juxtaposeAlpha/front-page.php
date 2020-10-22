@@ -3,7 +3,7 @@ get_header();
 ?>
         <article class="content mt-0 px-3 mx-4 p-md-4">
             <!-- Container 1 -->
-            <!-- <div class="container">
+            <div class="container">
                 <div class="row mt-md-0">
                     <div class="col-md-5 mt-5">
                         <div class="shadow-sm card mb-4">
@@ -132,10 +132,10 @@ get_header();
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <!-- Second Container for Ad Space -->
-            <!-- <div class="container">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-10 my-md-3">
                         <div class="card text-center shadow-sm py-3">
@@ -145,11 +145,11 @@ get_header();
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
 
             <!-- Third Container -->
-            <!-- <div class="container">
+            <div class="container">
                 <div class="row mt-4">
                     <div class="col-md-5 mb-3">
                         <div class="card text-left shadow-sm">
@@ -224,9 +224,10 @@ get_header();
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <!-- fetch a post via Wordpress Loop-->
+            <!-- May need to remove this because it interferes with category nav -->
             <?php
                 if( have_posts() ) {
                     while ( have_posts() ) {
