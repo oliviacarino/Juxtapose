@@ -413,37 +413,47 @@ get_header();
                             <img class="card-img-top"
                                 src="wp-content/themes/juxtaposeAlpha/assets/images/peopleWalking.jpg"
                                 alt="Card image cap">
+                
+                            <?php
+                            // the query
+                            $the_query = new WP_Query(array(
+                                'category_name' => 'local-news',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 5,
+                            ));
+                            ?>
 
-                        <?php $args = array(
-                        'post_type' => 'post' ,
-                        'orderby' => 'date' ,
-                        'order' => 'DESC' ,
-                        'posts_per_page' => 6,
-                        'cat'         => '3',
-                        'paged' => get_query_var('paged'),
-                        'post_parent' => $parent
-                        ); ?>
-                        
-                        <?php new WP_Query($args); ?>
-
-                        <?php if ( have_posts() ) : ?>
-                                <?php while ( have_posts() ) : the_post(); ?>
-
+                            <?php if ($the_query->have_posts()) : ?>
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    
                                     <div class="card-body pb-0">
-                                        <div class="latest_news_cont">
-                                        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+                                    <div class="latest_news_cont">
+                                        <a href="<?php the_permalink() ?>">
+                                        <?php the_post_thumbnail(); ?>
+                                        </a>
 
-                                        <a href="<?php the_permalink() ?>"><h5><?php the_title(); ?></h5></a>
+                                        <a href="<?php the_permalink() ?>">
+                                        <h5>
+                                            <?php the_title(); ?>
+                                        </h5>
+                                        </a>
                                         <?php the_excerpt(); ?>
                                         <p style="text-align:center;"><a href="<?php the_permalink() ?>" class="readmore_news">Read more</a></p>
                                         <br>
 
-                                        </div>
                                     </div>
+                                    </div>
+                                    
+                                    
 
                                 <?php endwhile; ?>
-                            <?php endif; ?>
+                                <?php wp_reset_postdata(); ?>
 
+                            <?php else : ?>
+                                <p><?php __('No News'); ?></p>
+                            <?php endif; ?>
+                
+                       
                             <!-- <div class="card-body pb-0">
                                 <div class="card-body">
                                     <p>Headline #1</p>
@@ -579,12 +589,12 @@ get_header();
             <!-- fetch a post via Wordpress Loop-->
             <!-- May need to remove this because it interferes with category sub nav -->
             <?php
-                if( have_posts() ) {
-                    while ( have_posts() ) {
-                        the_post();
-                        the_content(); //grabs content from post and inserts it
-                    }
-                }
+                // if( have_posts() ) {
+                //     while ( have_posts() ) {
+                //         the_post();
+                //         the_content(); //grabs content from post and inserts it
+                //     }
+                // }
             ?>
 
         </article>
