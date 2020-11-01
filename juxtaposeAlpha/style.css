@@ -65,6 +65,16 @@ h6 {
     font-weight: bold;
 }
 
+.card-text {
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+.ad-card-body{
+    height: 200px;
+    
+}
 .btn {
     font-weight: bold;
     padding: .375rem 1rem;
@@ -177,7 +187,7 @@ h6 {
 }
 
 .header .nav-item.active .nav-link:hover {
-    text-decoration: none
+    text-decoration: 
 }
 
 .header .nav-item .nav-link {
@@ -222,6 +232,8 @@ h6 {
 
 .main-wrapper .container {
      max-width: var(--content-max-width); 
+    padding-left: 8%;
+    padding-right: 8%;
 }
 .page-title {
     position:sticky;
@@ -255,6 +267,16 @@ h6 {
 #copyright-color {
     color: var(--white);
     text-decoration: none;
+
+}
+
+#footer-contact {
+    color: white;
+    font-weight: 500;
+}
+
+.copyright {
+    line-height: 0.7rem;
 }
 
 .content .post .title {

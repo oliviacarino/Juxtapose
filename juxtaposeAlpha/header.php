@@ -81,8 +81,6 @@
                 ?> -->
                
 
-                <img src="<?php echo $image[0]; ?>" alt="">
-
                 <!-- <a class="navbar-brand" href="#">Juxtapose</a> -->
 
                 <?php
@@ -134,8 +132,8 @@
         </nav>
     </header>
 
-    <header class="page-title text-left theme-bg-light">
-        <h1 class="heading"><?php the_title(); ?></h1> <!-- dynamically changes page title -->
-    </header>
+    <!-- <header class="page-title text-left theme-bg-light"> -->
+        <!-- <h1 class="heading"><?php //the_title(); ?></h1> dynamically changes page title -->
+    <!-- </header> -->
 
     <div class="main-wrapper">
