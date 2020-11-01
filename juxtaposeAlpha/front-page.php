@@ -226,6 +226,7 @@ get_header();
                 </div>
             </div> -->
 
+
             <!-- Container 1 -->
             <div class="container">
                 <div class="row">
@@ -401,17 +402,49 @@ get_header();
             <!-- Third Container -->
             <div class="container">
                 <div class="row mt-4">
+
+                    <!-- Local News Div -->
                     <div class="col-3">
                         <div class="card text-left shadow-sm">
                             <div class="card-header text-center">
                                 <strong>Local News</strong>
                             </div>
+
                             <img class="card-img-top"
                                 src="wp-content/themes/juxtaposeAlpha/assets/images/peopleWalking.jpg"
                                 alt="Card image cap">
 
+                        <?php $args = array(
+                        'post_type' => 'post' ,
+                        'orderby' => 'date' ,
+                        'order' => 'DESC' ,
+                        'posts_per_page' => 6,
+                        'cat'         => '3',
+                        'paged' => get_query_var('paged'),
+                        'post_parent' => $parent
+                        ); ?>
+                        
+                        <?php new WP_Query($args); ?>
 
-                            <div class="card-body pb-0">
+                        <?php if ( have_posts() ) : ?>
+                                <?php while ( have_posts() ) : the_post(); ?>
+
+                                    <div class="card-body pb-0">
+                                        <div class="latest_news_cont">
+                                        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+
+                                        <a href="<?php the_permalink() ?>"><h5><?php the_title(); ?></h5></a>
+                                        <?php the_excerpt(); ?>
+                                        <p style="text-align:center;"><a href="<?php the_permalink() ?>" class="readmore_news">Read more</a></p>
+                                        <br>
+
+                                        </div>
+                                    </div>
+
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+
+                            <!-- <div class="card-body pb-0">
                                 <div class="card-body">
                                     <p>Headline #1</p>
                                 </div>
@@ -435,9 +468,12 @@ get_header();
                                 <div class="card-body">
                                     <p>Headline #5</p>
                                 </div>
-                            </div>
+                            </div> -->
+
                         </div>
                     </div>
+
+                    <!-- Sports Div -->
                     <div class="col-3">
                         <div class="card text-left shadow-sm">
                             <div class="card-header text-center">
@@ -473,6 +509,8 @@ get_header();
                             </div>
                         </div>
                     </div>
+
+                    <!-- Education Div -->
                     <div class="col-3">
                         <div class="card text-left shadow-sm">
                             <div class="card-header text-center">
@@ -508,6 +546,8 @@ get_header();
                             </div>
                         </div>
                     </div>
+
+                    <!-- Trending Stories Div -->
                     <div class="col-3">
                       <div class="card mb-4 shadow-sm">
                         <h5 class="card-title mb-2 pt-4 text-center">Trending Stories</h5>
@@ -532,11 +572,12 @@ get_header();
                     
                     
                     </div>
+
                 </div>
             </div>
 
             <!-- fetch a post via Wordpress Loop-->
-            <!-- May need to remove this because it interferes with category nav -->
+            <!-- May need to remove this because it interferes with category sub nav -->
             <?php
                 if( have_posts() ) {
                     while ( have_posts() ) {

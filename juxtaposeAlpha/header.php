@@ -31,7 +31,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Need to fix uploading images to WP but using static logo for now -->
-                <svg class="svg-style" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202.003"
+                <!-- <svg class="svg-style" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202.003"
                     height="55.59" viewBox="0 0 202.003 55.59">
                     <defs>
                         <clipPath id="clip-path">
@@ -71,14 +71,14 @@
                                 transform="translate(43.614 3.592)" fill="#b8cdea" />
                         </g>
                     </g>
-                </svg>
+                </svg> -->
 
                 <!-- Custom Logo from Upload -->
-                <!-- 
+                <?php
                 if(function_exists('the_custom_logo')){
                     the_custom_logo();
                 }
-                ?> -->
+                ?>
                
 
                 <!-- <a class="navbar-brand" href="#">Juxtapose</a> -->
