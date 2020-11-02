@@ -1,2 +1,2 @@
 # juxtaposeAlpha
-This will be the official repo for the alpha of our WP theme. 
+This will be the official repo for our WP theme. 
