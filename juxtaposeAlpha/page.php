@@ -1,1 +1,0 @@
-//template page for About, Donate, Subscribe, and Contact Us all on one password
