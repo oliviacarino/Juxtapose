@@ -1,25 +1,21 @@
-<?php
-//required file
-//serves as fallback if WP can't locate a specific WP template file ---- using copy of front-page.php
+<?php 
+    /* Template Name: Category Template */ 
+    get_header();
 ?>
 
-<?php
-get_header();
-?>
-
-<article class="content mt-0 px-3 mx-1 p-md-4">
-
+<article class="content mt-0 px-3 mx-1 p-md-4"> 
+    <h1 class="text-center pb-2"><?php wp_title(); ?></h1>
             <!-- Container 1 -->
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-4">
                         <div class="shadow-sm card mb-3">
-                        <h4 class="card-header text-center">Top Stories</h4>
+                        <h4 class="card-header text-center">Top Story</h4>
                             
                             <?php
                             // the query
                             $the_query = new WP_Query(array(
-                                'category_name' => 'top-posts',
+                                'category_name' => 'sports',
                                 'post_status' => 'publish',
                                 'posts_per_page' => 3
                             ));
@@ -31,7 +27,6 @@ get_header();
                                     <div class="card-body">
                                         <div class="latest_news_cont">
                                             <a href="<?php the_permalink() ?>">
-                                            <?php the_post_thumbnail(); ?>
                                             </a>
 
                                             <a href="<?php the_permalink() ?>">
@@ -55,7 +50,7 @@ get_header();
 
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                         <div class="card text-left shadow-sm mb-4">
 
                             <?php
@@ -74,7 +69,7 @@ get_header();
                                         <div class="latest_news_cont">
                                             <!-- <a href="<?php the_permalink() ?>"> -->
                                             <div class="mb-2">
-                                            <?php the_post_thumbnail(); ?>
+                                            <?php the_post_thumbnail(array(350, 200)); ?>
                                             </div>
                                             <!-- </a> -->
 
@@ -103,7 +98,7 @@ get_header();
                         
 
                     </div>
-                    <div class="col-3">
+                    <div class="col-4">
                           <div class="card mb-4 shadow-md pb-4 card-height">
                             <div class="ad-card-body">
                                 <h5 class="card-title text-center">Ad Space</h5>
@@ -125,7 +120,7 @@ get_header();
                        
                  
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-4">
                         <div class="card text-left shadow-sm mb-4">
 
                         <?php
@@ -144,7 +139,7 @@ get_header();
                                         <div class="latest_news_cont">
                                             <!-- <a href="<?php the_permalink() ?>"> -->
                                             <div class="mb-2">
-                                                <div class="thumbnail-size">
+                                                <div class="thumbnail-size2">
                                                     <?php the_post_thumbnail('medium'); ?>
                                                 </div>
                                             </div>
@@ -170,22 +165,10 @@ get_header();
                                 <p><?php __('No News'); ?></p>
                             <?php endif; ?>  
 
-                            <!-- <img class="card-img-top" src="wp-content/themes/juxtaposeAlpha/assets/images/policeTape.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Story Title #2</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                                    semper risus a purus ultrices convallis. 
-                                </p>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                                    semper risus a purus ultrices convallis. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                </p>
-                            </div> -->
-
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-4">
                         <div class="card text-left shadow-sm mb-4">
 
                         <?php
@@ -204,7 +187,7 @@ get_header();
                                         <div class="latest_news_cont">
                                             <!-- <a href="<?php the_permalink() ?>"> -->
                                             <div class="mb-2">
-                                            <?php the_post_thumbnail(); ?>
+                                            <?php the_post_thumbnail('medium'); ?>
                                             </div>
                                             <!-- </a> -->
 
@@ -231,7 +214,7 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-4">
                     <div class="card mb-3 shadow-sm">
                         <div class="card-body">
                             <div class="panel panel-primary">
@@ -260,14 +243,6 @@ get_header();
                                             <div class="checkbox">
                                                 <label>
                                                     <input type="checkbox" value="">
-                                                    Radio
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">
                                                     Newspaper
                                                 </label>
                                             </div>
@@ -276,18 +251,11 @@ get_header();
                                             <div class="checkbox">
                                                 <label>
                                                     <input type="checkbox" value="">
-                                                    Social Media
+                                                    Other
                                                 </label>
                                             </div>
                                         </li>
-                                        <li class="list-group-item">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    Others
-                                                </label>
-                                            </div>
-                                        </li>
+                                    
                                     </ul>
                                 </div>
                                 <div class="panel-footer text-center">
@@ -320,23 +288,20 @@ get_header();
             <div class="container">
                 <div class="row mt-4">
 
-                    <!-- Local News Div -->
-                    <div class="col-3">
+                    <!-- Headline 1 Div -->
+                    <div class="col-4">
                         <div class="card text-left shadow-sm">
-                            <div class="card-header text-center sabon-font">
-                                <strong>Local News</strong>
-                            </div>
 
                             <img class="card-img-top"
-                                src="wp-content/themes/juxtaposeAlpha/assets/images/peopleWalking.jpg"
+                                src="wp-content/themes/juxtaposeAlpha/assets/images/run.jpg"
                                 alt="Card image cap">
                 
                             <?php
                             // the query
                             $the_query = new WP_Query(array(
-                                'category_name' => 'local-news',
+                                'category_name' => 'sports',
                                 'post_status' => 'publish',
-                                'posts_per_page' => 5,
+                                'posts_per_page' => 1,
                             ));
                             ?>
 
@@ -372,119 +337,15 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Sports Div -->
-                    <div class="col-3">
-                    <div class="card text-left shadow-sm">
-                            <div class="card-header text-center sabon-font">
-                                <strong>Sports</strong>
-                            </div>
-
-                            <img class="card-img-top"
-                                src="wp-content/themes/juxtaposeAlpha/assets/images/sports.jpg"
-                                alt="Card image cap">
-                
-                            <?php
-                            // the query
-                            $the_query = new WP_Query(array(
-                                'category_name' => 'sports',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 5,
-                            ));
-                            ?>
-
-                            <?php if ($the_query->have_posts()) : ?>
-                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    
-                                    <div class="card-body pb-0">
-                                    <div class="latest_news_cont">
-                                        <a href="<?php the_permalink() ?>">
-                                        <?php the_post_thumbnail(); ?>
-                                        </a>
-
-                                        <a href="<?php the_permalink() ?>">
-                                        <h5>
-                                            <?php the_title(); ?>
-                                        </h5>
-                                        </a>
-                                        <?php the_excerpt(); ?>
-                                        <!-- <p><a href="<?php the_permalink() ?>" class="readmore_news">Read more ></a></p> -->
-                                        <div class="mb-1 pb-2">
-                                            <?php echo get_the_date( 'F j, Y' ); ?>
-                                        </div>
-                                    </div>
-                                    </div>
- 
-                                <?php endwhile; ?>
-                                <?php wp_reset_postdata(); ?>
-
-                            <?php else : ?>
-                                <p><?php __('No News'); ?></p>
-                            <?php endif; ?>
-
-                        </div>
-                    </div>
-
-                    <!-- Education Div -->
-                    <div class="col-3">
-                    <div class="card text-left shadow-sm mb-2">
-                            <div class="card-header text-center sabon-font pt-3">
-                                <strong>Education</strong>
-                            </div>
-
-                            <img class="card-img-top"
-                                src="wp-content/themes/juxtaposeAlpha/assets/images/education.jpg"
-                                alt="Card image cap">
-                
-                            <?php
-                            // the query
-                            $the_query = new WP_Query(array(
-                                'category_name' => 'education',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 5,
-                            ));
-                            ?>
-
-                            <?php if ($the_query->have_posts()) : ?>
-                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    
-                                    <div class="card-body pb-0">
-                                    <div class="latest_news_cont">
-                                        <a href="<?php the_permalink() ?>">
-                                        <?php the_post_thumbnail(); ?>
-                                        </a>
-
-                                        <a href="<?php the_permalink() ?>">
-                                        <h5>
-                                            <?php the_title(); ?>
-                                        </h5>
-                                        </a>
-                                        <?php the_excerpt(); ?>
-                                        <!-- <p><a href="<?php the_permalink() ?>" class="readmore_news">Read more ></a></p> -->
-                                        <div class="mb-1 pb-2">
-                                            <?php echo get_the_date( 'F j, Y' ); ?>
-                                        </div>
-                                    </div>
-                                    </div>
- 
-                                <?php endwhile; ?>
-                                <?php wp_reset_postdata(); ?>
-
-                            <?php else : ?>
-                                <p><?php __('No News'); ?></p>
-                            <?php endif; ?>
-
-                        </div>
-                    </div>
-
                     <!-- Trending Stories Div -->
-                    <div class="col-3">
+                    <div class="col-4">
                         <div class="card mb-2 shadow-sm">
                             <h5 class="card-title card-header mb-2 pt-3 text-center sabon-font">Trending Stories</h5>
                             
                             <?php
                             // the query
                             $the_query = new WP_Query(array(
-                                'category_name' => 'trending-stories',
+                                'category_name' => 'sports',
                                 'post_status' => 'publish',
                                 'posts_per_page' => 5,
                             ));
@@ -514,10 +375,61 @@ get_header();
 
                         </div>
                     </div>
+
+                    <!-- Headline 2 Div -->
+                    <div class="col-4">
+                    <div class="card text-left shadow-sm">
+                        <img class="card-img-top"
+                        src="wp-content/themes/juxtaposeAlpha/assets/images/sports.jpg"
+                        alt="Card image cap">
+                
+                            <?php
+                            // the query
+                            $the_query = new WP_Query(array(
+                                'category_name' => 'sports',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 1,
+                            ));
+                            ?>
+
+                            <?php if ($the_query->have_posts()) : ?>
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+                                    <div class="card-body pb-0">
+                                    <div class="latest_news_cont">
+                                    <h5>
+                                    <a href="<?php the_permalink() ?>">
+                                        <?php the_title(); ?> </a>
+                                    </h5>
+                                        <a href="<?php the_permalink() ?>">
+                                        <?php the_post_thumbnail(); ?>
+                                        </a>
+
+                                        <a href="<?php the_permalink() ?>">
+                            
+                                        </a>
+                                        <?php the_excerpt(); ?>
+                                        <!-- <p><a href="<?php the_permalink() ?>" class="readmore_news">Read more ></a></p> -->
+                                        <div class="mb-1 pb-2">
+                                            <?php echo get_the_date( 'F j, Y' ); ?>
+                                        </div>
+                                    </div>
+                                    </div>
+ 
+                                <?php endwhile; ?>
+                                <?php wp_reset_postdata(); ?>
+
+                            <?php else : ?>
+                                <p><?php __('No News'); ?></p>
+                            <?php endif; ?>
+
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
         </article>
-    
-<?php
-get_footer();
-?>
+
+
+<?php get_footer(); ?>

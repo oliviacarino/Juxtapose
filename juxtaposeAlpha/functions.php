@@ -3,7 +3,15 @@
 function juxtaposeAlpha_theme_support(){
     // Adds dynamic title tag support
     add_theme_support('title-tag');
+
+    //Enables custom logo inserted in primary nav
     add_theme_support('custom-logo');
+
+    //Enables featured images/thumbnails
+    add_theme_support( 'post-thumbnails' );
+
+    //Gets the title of the page
+    add_theme_support( 'title-tag' );
 
 }
 add_action('after_setup_theme', 'juxtaposeAlpha_theme_support');
@@ -47,11 +55,21 @@ add_action( 'wp_enqueue_scripts', 'juxtaposeAlpha_register_scripts');
 
 ?>
 
-
-
 <?php
 function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+?>
+
+<?php
+//custom length of excerpts for returned posts
+add_filter( 'excerpt_length', function($length) {
+    return 8;
+} );
+?>
+
+<?php
+//set image size for post thumbnail image
+set_post_thumbnail_size(510, 500);
 ?>

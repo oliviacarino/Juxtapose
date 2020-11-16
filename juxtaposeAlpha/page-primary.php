@@ -40,9 +40,10 @@ get_header();
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Marcel Reyes</h5>
+                                <p class="card-text"><medium class="text-muted">Journalist</medium></p>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
                         </div>
                     </div>
@@ -57,9 +58,10 @@ get_header();
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">River Thomson</h5>
+                                <p class="card-text"><medium class="text-muted">Chief Editor</medium></p>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
                         </div>
                     </div>
@@ -74,27 +76,14 @@ get_header();
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Caoimhe Calvert</h5>
+                                <p class="card-text"><medium class="text-muted">Editor</medium></p>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <br>
-                <br>
-
-                <h2>Contact</h2>
-                <p>
-                    Phone: (555) 555-5555
-                </p>
-                <p>
-                    Email: Send us a message
-                </p>
-                <p>
-                    FAQ: juxtapose.com
-                </p>
 
                 <br>
                 <br>
@@ -121,6 +110,24 @@ get_header();
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                 </form>
+
+                <br>
+                <br>
+
+                <h2>Contact Us</h2>
+                <p>
+                    <strong>Phone:</strong> (555) 555-5555
+                </p>
+                <p>
+                    <strong>Email:</strong> Send us a message
+                </p>
+                <p>
+                    <strong>FAQ:</strong> juxtapose.com
+                </p>
+
+            
+
+            
 
 
             </div>

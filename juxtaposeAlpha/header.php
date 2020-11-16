@@ -27,7 +27,7 @@
     <header>
         <!-- Bootstrap Navwalker for Primary Nav -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" role="navigation">
-            <div class="container">
+            <div class="container mx-auto px-4">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
@@ -44,7 +44,7 @@
                
 
                 <!-- <a class="navbar-brand" href="#">Juxtapose</a> -->
-
+            <div class="mx-auto">    
             <?php
             wp_nav_menu( array(
             'theme_location'    => 'primary',
@@ -57,44 +57,22 @@
             'walker'            => new WP_Bootstrap_Navwalker(),
              ) );
             ?>
+            </div>
                 <!-- Search -->
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                </form>
-
+                <div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
 
 
-    <!-- Still need to apply Navwalker to this somehow while keeping styling -->
     <!-- Category Nav -->
-    <header class="page-title theme-bg-light text-center">
-        <!-- <nav class="navbar navbar-expand-lg navbar-light">
-            <div id="navigation" class="justify-content-center collapse navbar-collapse flex-row">
-                <ul class="navbar-nav flex-row">
-                    <li class="category-item nav-item active px-3">
-                        <a class="nav-link" href="#"><span class="border-underline"><strong>News</strong></span></a>
-                    </li>
-                    <li class="category-item nav-item active px-3">
-                        <a class="nav-link" href="#"><span class="border-underline"><strong>Sports</strong></span></a>
-                    </li>
-                    <li class="category-item nav-item active px-3">
-                        <a class="nav-link" href="#"><span
-                                class="border-underline"><strong>Education</strong></span></a>
-                    </li>
-                    <li class="category-item nav-item active px-3">
-                        <a class="nav-link" href="#"><span class="border-underline"><strong>Opinion</strong></span></a>
-                    </li>
-                    <li class="category-item nav-item active px-3">
-                        <a class="nav-link" href="#"><span
-                                class="border-underline"><strong>E-Edition</strong></span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
-
+    <header class="page-title theme-bg-light">
+        
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom2" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -103,26 +81,23 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
-            <?php
-            wp_nav_menu( array(
-            'theme_location'    => 'category',
-            'depth'             => 2,
-            'container'         => 'div',
-            'container_class'   => 'collapse navbar-collapse',
-            'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav navbar-nav',
-            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'            => new WP_Bootstrap_Navwalker(),
-             ) );
-            ?>
+                <div class="mx-auto pr-5 pt-3">
+                <?php
+                wp_nav_menu( array(
+                'theme_location'    => 'category',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'            => new WP_Bootstrap_Navwalker(),
+                ) );
+                ?>
+                </div>
             </div>
         </nav>
 
     </header>
-
-    <!-- <header class="page-title text-left theme-bg-light"> -->
-        <!-- <h1 class="heading"><?php //the_title(); ?></h1> dynamically changes page title -->
-    <!-- </header> -->
 
     <div class="main-wrapper">

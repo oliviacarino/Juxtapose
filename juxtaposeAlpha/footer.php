@@ -12,19 +12,14 @@
     </form>
 </section>
 
-<footer class="footer text-right py-3 pr-4">
-    <h5 id="footer-contact"><strong>Contact Information</strong></h5>
-    <p class="copyright pt-3 pb-0"><a id="copyright-color" href="#">540 Baxter St</p>
-    <p class="copyright"><a id="copyright-color" href="#">Athens, GA 30605</p>
-    <p class="copyright"><a id="copyright-color" href="#"><strong>Phone: </strong>(555) 555-5555</p>
-    <p class="copyright"><a id="copyright-color" href="#"><strong>Email: </strong>email@news.com</p>
-
-    <!-- <p class="copyright pt-4 pb-0"><a id="copyright-color" href="#">Juxtapose &copy; - Ev Andrews, Olivia
-                        Carino &amp; Alison Jibilian</a></p>
-
-                <a id="copyright-color" href="#" target="_blank">
-                    <p class="copyright">Visit our <u>Site</u> | Follow us on <u>Twitter</u></p>
-                </a> -->
+<footer class="footer">
+    <div class="text-left py-3 pl-4">
+        <h4 id="footer-contact"><strong>Contact Information</strong></h4>
+        <p class="copyright pt-3 pb-0"><a id="copyright-color" href="#"><strong>Address:</strong> 540 Baxter St</p>
+        <p class="copyright"><a id="copyright-color" href="#">Athens, GA 30605</p>
+        <p class="copyright"><a id="copyright-color" href="#"><strong>Phone: </strong>(555) 555-5555</p>
+        <p class="copyright"><a id="copyright-color" href="#"><strong>Email: </strong>email@news.com</p>
+    </div>
 </footer>
 
 </div>

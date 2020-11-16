@@ -1,6 +1,6 @@
 /*
-Theme Name: JuxtaposeAlpha
-Text Domain: juxtaposeAlpha
+Theme Name: Juxtapose
+Text Domain: juxtapose
 Version: 1.0
 Description: A clean and organized theme for local news sites.
 Tags: news, news-site, local-news, responsive, simple, minimalistic, organized
@@ -125,7 +125,7 @@ h1, h2, h4, h5 {
 /* Bootstrap Navwalker styling */
 .navbar-custom {
     background-color: var(--primary);
-    color: white;
+    /* color: white; */
     font-weight: 500;
 }
 .svg-style {
@@ -452,6 +452,18 @@ h1, h2, h4, h5 {
     color: #434242;
     text-decoration: underline;
     font-weight: 600;
+}
+
+/* Ad Space Card Height */
+.card-height {
+    height: 300px;
+}
+
+/* Change custom logo size */
+.custom-logo {
+	max-height: 50px;
+    height: 50px;
+    width: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
