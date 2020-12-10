@@ -64,12 +64,61 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 
 <?php
 //custom length of excerpts for returned posts
-add_filter( 'excerpt_length', function($length) {
-    return 8;
-} );
+// add_filter( 'excerpt_length', function($length) {
+//     return 8;
+// } );
+?>
+
+<?php
+//Removes ellipsis from excerpt (if it exists)
+// function new_excerpt_more($more) {
+//   global $post;
+//   remove_filter('excerpt_more', 'new_excerpt_more'); 
+//   return ' <a class="read_more" href="'. get_permalink($post->ID) . '">' . '' . '</a>';
+// }
+// add_filter('excerpt_more','new_excerpt_more');
 ?>
 
 <?php
 //set image size for post thumbnail image
 set_post_thumbnail_size(510, 500);
 ?>
+
+
+<?php
+//create sidebar
+add_action( 'widgets_init', 'my_register_sidebars' );
+function my_register_sidebars() {
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'one',
+            'name'          => __( 'Primary Sidebar' ),
+            'description'   => __( 'A short description of the sidebar.' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    
+    register_sidebar( array(
+        'name'          => __( 'Secondary Sidebar', 'theme_name' ),
+        'id'            => 'two',
+        'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li></ul>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+    
+    register_sidebar( array(
+        'name'          => __( 'Third Sidebar', 'theme_name' ),
+        'id'            => 'three',
+        'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li></ul>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+    /* Repeat register_sidebar() code for additional sidebars. */
+}
+  

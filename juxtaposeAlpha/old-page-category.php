@@ -23,7 +23,6 @@
 
                             <?php if ($the_query->have_posts()) : ?>
                                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    
                                     <div class="card-body">
                                         <div class="latest_news_cont">
                                             <a href="<?php the_permalink() ?>">
@@ -99,7 +98,7 @@
 
                     </div>
                     <div class="col-4">
-                          <div class="card mb-4 shadow-md pb-4 card-height">
+                        <div class="card mb-4 shadow-md pb-4 card-height">
                             <div class="ad-card-body">
                                 <h5 class="card-title text-center">Ad Space</h5>
                             </div>
@@ -110,13 +109,9 @@
                                     <p>Sign up for the newsletter and get the week's top stories in your inbox. </p>
                                     <a href="#" class="btn btn-primary">Sign Up</a>
                             </div>
-                        </div>
-                      
-                     
-                 
+                    </div>
+                 </div>
             </div>
-                                
-                            </div>
                        
                  
                 <div class="row">

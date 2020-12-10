@@ -461,10 +461,18 @@ h1, h2, h4, h5 {
 
 /* Change custom logo size */
 .custom-logo {
-	max-height: 50px;
-    height: 50px;
+	max-height: 70px;
+    height: 70px;
     width: auto;
 }
+
+/* Social Media Icons */
+
+/* Category Page Title */
+.cat-title {
+    color: black;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
     .social-list a {
