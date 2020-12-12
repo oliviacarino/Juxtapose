@@ -37,7 +37,7 @@ Author URI: [insert URL for portfolio, nmi, etc or whatever]
     /* Sidebar */
     /* --sidebar-width: 280px; */
     /* --content-max-width: 960px; */
-    /* font-family: Helvetica; */
+    font-family: Helvetica;
 }
 
 *,
@@ -471,6 +471,22 @@ h1, h2, h4, h5 {
 /* Category Page Title */
 .cat-title {
     color: black;
+}
+
+/* Sidebar Title */
+.widget-title {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Div Titles */
+.frontpage-div-header {
+    color: black;
+}
+
+/* Category Post Title */
+.category-post-title {
+    font-size: 1.7rem;
 }
 
 

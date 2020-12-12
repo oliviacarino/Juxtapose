@@ -2,7 +2,7 @@
     <?php dynamic_sidebar( 'one' ); ?>
 </div>
 
-<div id="sidebar-primary" class="sidebar">
+<div id="sidebar-secondary" class="sidebar">
     <?php dynamic_sidebar( 'two' ); ?>
 </div>
 

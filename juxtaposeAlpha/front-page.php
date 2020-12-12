@@ -9,7 +9,7 @@ get_header();
                 <!-- Row 1 -->
                 <div class="row">
                     <div class="col-3">
-                        <div class="shadow-sm card">
+                        <div class="shadow-sm card frontpage-div-header">
                         <h4 class="card-header text-center">Top Stories</h4>
                             
                             <?php
@@ -35,7 +35,7 @@ get_header();
                                                 <?php the_title(); ?>
                                             </h5>
                                             </a>
-                                            <?php the_excerpt(); ?>
+                                            <?php //the_excerpt(); ?>
                                             <!-- <p><a href="<?php the_permalink() ?>" class="readmore_news">Read more ></a></p> -->
                                             <?php echo get_the_date( 'F j, Y' ); ?>
                                         </div>
@@ -78,7 +78,7 @@ get_header();
                                                 <?php the_title(); ?>
                                             </h4>
                                             </a>
-                                            <?php the_excerpt(); ?>
+                                            <?php //the_excerpt(); ?>
                                             <div class="pt-5">
                                             <?php echo get_the_date( 'F j, Y' ); ?>
                                             </div>
@@ -123,7 +123,7 @@ get_header();
                                         <div class="latest_news_cont">
                                             <!-- <a href="<?php the_permalink() ?>"> -->
                                             <div class="mb-2">
-                                                <div class="thumbnail-size">
+                                                <div class="thumbnail-size mb-0">
                                                     <?php the_post_thumbnail('medium'); ?>
                                                 </div>
                                             </div>
@@ -134,7 +134,7 @@ get_header();
                                                 <?php the_title(); ?>
                                             </h4>
                                             </a>
-                                            <?php the_excerpt(); ?>
+                                            <?php //the_excerpt(); ?>
                                             <div class="pt-5">
                                             <?php echo get_the_date( 'F j, Y' ); ?>
                                             </div>
@@ -226,7 +226,7 @@ get_header();
                     <!-- Local News Div -->
                     <div class="col-3">
                         <div class="card text-left shadow-sm">
-                            <div class="card-header text-center sabon-font">
+                            <div class="card-header text-center sabon-font frontpage-div-header">
                                 <strong>Local News</strong>
                             </div>
 
@@ -239,7 +239,7 @@ get_header();
                             $the_query = new WP_Query(array(
                                 'category_name' => 'local-news',
                                 'post_status' => 'publish',
-                                'posts_per_page' => 5,
+                                'posts_per_page' => 3,
                             ));
                             ?>
 
@@ -257,7 +257,7 @@ get_header();
                                             <?php the_title(); ?>
                                         </h5>
                                         </a>
-                                        <?php the_excerpt(); ?>
+                                        <?php //the_excerpt(); ?>
                                         <!-- <p><a href="<?php the_permalink() ?>" class="readmore_news">Read more ></a></p> -->
                                         <div class="mb-1 pb-2">    
                                             <?php echo get_the_date( 'F j, Y' ); ?>
@@ -278,7 +278,7 @@ get_header();
                     <!-- Sports Div -->
                     <div class="col-3">
                     <div class="card text-left shadow-sm">
-                            <div class="card-header text-center sabon-font">
+                            <div class="card-header text-center sabon-font frontpage-div-header">
                                 <strong>Sports</strong>
                             </div>
 
@@ -291,7 +291,7 @@ get_header();
                             $the_query = new WP_Query(array(
                                 'category_name' => 'sports',
                                 'post_status' => 'publish',
-                                'posts_per_page' => 5,
+                                'posts_per_page' => 3,
                             ));
                             ?>
 
@@ -309,7 +309,7 @@ get_header();
                                             <?php the_title(); ?>
                                         </h5>
                                         </a>
-                                        <?php the_excerpt(); ?>
+                                        <?//php the_excerpt(); ?>
                                         <!-- <p><a href="<?php the_permalink() ?>" class="readmore_news">Read more ></a></p> -->
                                         <div class="mb-1 pb-2">
                                             <?php echo get_the_date( 'F j, Y' ); ?>
@@ -330,7 +330,7 @@ get_header();
                     <!-- Education Div -->
                     <div class="col-3">
                     <div class="card text-left shadow-sm mb-2">
-                            <div class="card-header text-center sabon-font pt-3">
+                            <div class="card-header text-center sabon-font pt-3 frontpage-div-header">
                                 <strong>Education</strong>
                             </div>
 
@@ -343,7 +343,7 @@ get_header();
                             $the_query = new WP_Query(array(
                                 'category_name' => 'education',
                                 'post_status' => 'publish',
-                                'posts_per_page' => 5,
+                                'posts_per_page' => 3,
                             ));
                             ?>
 
@@ -361,7 +361,7 @@ get_header();
                                             <?php the_title(); ?>
                                         </h5>
                                         </a>
-                                        <?php the_excerpt(); ?>
+                                        <?//php the_excerpt(); ?>
                                         <!-- <p><a href="<?php the_permalink() ?>" class="readmore_news">Read more ></a></p> -->
                                         <div class="mb-1 pb-2">
                                             <?php echo get_the_date( 'F j, Y' ); ?>
