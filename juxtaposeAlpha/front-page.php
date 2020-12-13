@@ -10,7 +10,7 @@ get_header();
                 <div class="row">
                     <div class="col-3">
                         <div class="shadow-sm card frontpage-div-header">
-                        <h4 class="card-header text-center">Top Stories</h4>
+                        <h4 class="card-header text-center" style="color: black;">Top Stories</h4>
                             
                             <?php
                             // the query
@@ -31,7 +31,7 @@ get_header();
                                             </a>
 
                                             <a href="<?php the_permalink() ?>">
-                                            <h5>
+                                            <h5 style="color: black;">
                                                 <?php the_title(); ?>
                                             </h5>
                                             </a>
@@ -74,7 +74,7 @@ get_header();
                                             <!-- </a> -->
 
                                             <a href="<?php the_permalink() ?>">
-                                            <h4>
+                                            <h4 style="color: black;">
                                                 <?php the_title(); ?>
                                             </h4>
                                             </a>
@@ -123,14 +123,14 @@ get_header();
                                         <div class="latest_news_cont">
                                             <!-- <a href="<?php the_permalink() ?>"> -->
                                             <div class="mb-2">
-                                                <div class="thumbnail-size mb-0">
+                                                <div class="thumbnail-size mb-4">
                                                     <?php the_post_thumbnail('medium'); ?>
                                                 </div>
                                             </div>
                                             <!-- </a> -->
 
                                             <a href="<?php the_permalink() ?>">
-                                            <h4>
+                                            <h4 style="color: black;">
                                                 <?php the_title(); ?>
                                             </h4>
                                             </a>
@@ -153,7 +153,7 @@ get_header();
                     </div>
 
                     <div class="col-6">
-                        <div class="card text-left shadow-sm mb-4">
+                        <div class="card text-left shadow-sm mt-4 mb-4">
 
                         <?php
                             // the query
@@ -176,7 +176,7 @@ get_header();
                                             <!-- </a> -->
 
                                             <a href="<?php the_permalink() ?>">
-                                            <h4>
+                                            <h4 style="color: black;">
                                                 <?php the_title(); ?>
                                             </h4>
                                             </a>
@@ -211,7 +211,7 @@ get_header();
                     <div class="col-9">
                         <div class="card text-center shadow-sm py-3">
                             <div class="card-body">
-                                <h5 class="card-title">Ad Space</h5>
+                                <h5 class="card-title" style="color: black;">Ad Space</h5>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@ get_header();
                                         </a>
 
                                         <a href="<?php the_permalink() ?>">
-                                        <h5>
+                                        <h5 style="color: black;">
                                             <?php the_title(); ?>
                                         </h5>
                                         </a>
@@ -305,7 +305,7 @@ get_header();
                                         </a>
 
                                         <a href="<?php the_permalink() ?>">
-                                        <h5>
+                                        <h5 style="color: black;">
                                             <?php the_title(); ?>
                                         </h5>
                                         </a>
@@ -357,7 +357,7 @@ get_header();
                                         </a>
 
                                         <a href="<?php the_permalink() ?>">
-                                        <h5>
+                                        <h5 style="color: black;">
                                             <?php the_title(); ?>
                                         </h5>
                                         </a>

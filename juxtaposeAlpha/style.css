@@ -273,8 +273,9 @@ h1, h2, h4, h5 {
 }
 
 .thumbnail-size {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
 }
 
 .footer {
