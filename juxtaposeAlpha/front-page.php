@@ -225,7 +225,7 @@ get_header();
 
                     <!-- Local News Div -->
                     <div class="col-3">
-                        <div class="card text-left shadow-sm">
+                        <div class="card text-left shadow-sm pb-4">
                             <div class="card-header text-center sabon-font frontpage-div-header">
                                 <strong>Local News</strong>
                             </div>
@@ -329,7 +329,7 @@ get_header();
 
                     <!-- Education Div -->
                     <div class="col-3">
-                    <div class="card text-left shadow-sm mb-2">
+                    <div class="card text-left shadow-sm pb-4">
                             <div class="card-header text-center sabon-font pt-3 frontpage-div-header">
                                 <strong>Education</strong>
                             </div>
@@ -378,9 +378,6 @@ get_header();
 
                         </div>
                     </div>
-
-                    <!-- Trending Stories Div -->
-                    
 
                 </div>
             </div>
