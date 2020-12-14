@@ -35,8 +35,8 @@ Author URI: [insert URL for portfolio, nmi, etc or whatever]
     --font-normal: 1em;
     --font-small: 0.8125rem;
     /* Sidebar */
-    /* --sidebar-width: 280px; */
-    /* --content-max-width: 960px; */
+    /* --sidebar-width: 280px;
+    --content-max-width: 960px; */
     font-family: Helvetica;
 }
 
@@ -286,10 +286,6 @@ h1, h2, h4, h5 {
 .footer a {
     color: #484848;
 }
-/* .background-color{
-    background-color: var(--primary);
-} */
-
 
 #copyright-color {
     color: var(--white);

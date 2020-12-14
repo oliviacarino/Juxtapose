@@ -4,7 +4,7 @@ get_header();
         <article class="content mt-0 px-3 mx-1 p-md-4">
 
             <!-- Container -->
-            <div class="container">
+            <div class="container-fluid"> <!-- changed to container-fluid -->
 
                 <!-- Row 1 -->
                 <div class="row">
@@ -206,7 +206,7 @@ get_header();
             </div>
 
             <!-- Container 2 - Ad Space -->
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-9">
                         <div class="card text-center shadow-sm py-3">
@@ -220,7 +220,7 @@ get_header();
 
 
             <!-- Container 3 -->
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row mt-4">
 
                     <!-- Local News Div -->

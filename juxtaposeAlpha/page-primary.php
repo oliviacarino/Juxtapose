@@ -15,7 +15,7 @@ get_header();
                         </div>
                     </div> -->
                 <!-- <a id="about"> -->
-                    <h1 class="cat-title">About Juxtapose</h1>
+                    <h1 class="cat-title">About Red Rock Community Newspaper</h1>
                     <p>Newsroom cafe Dan Fleckner right-sizing API backpack journalist CTR Android try PR Josh Marshall,
                         gotta grok it before you rock it hyperlocal Romenesko paywall people formerly known as the audience
                         Steve Jobs dying, but what’s the business model Wikipedia aggregation AOL RSS social media
