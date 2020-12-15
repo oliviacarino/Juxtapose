@@ -103,19 +103,19 @@ function my_register_sidebars() {
     );
     
     register_sidebar( array(
-        'name'          => __( 'Secondary Sidebar', 'theme_name' ),
+        'name'          => __( 'Secondary Sidebar'),
         'id'            => 'two',
-        'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</li></ul>',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  =>'</div>',
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ) );
     
     register_sidebar( array(
-        'name'          => __( 'Third Sidebar', 'theme_name' ),
+        'name'          => __( 'Third Sidebar' ),
         'id'            => 'three',
-        'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</li></ul>',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ) );

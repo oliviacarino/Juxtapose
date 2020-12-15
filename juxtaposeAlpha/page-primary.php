@@ -46,9 +46,7 @@ get_header();
                                 <div class="card-body">
                                     <h5 class="cat-title card-title">Marcel Reyes</h5>
                                     <p class="card-text"><medium class="text-muted">Publisher</medium></p>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                    <p class="card-text">Colbert bump Innovator's Dilemma Arianna Kindle Single Django Knight News Challenge future of context Jeff Jarvis</p>
                                 </div>
                             </div>
                         </div>
@@ -64,9 +62,7 @@ get_header();
                                 <div class="card-body">
                                     <h5 class="cat-title card-title">River Thomson</h5>
                                     <p class="card-text"><medium class="text-muted">Editor in Chief</medium></p>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                    <p class="card-text">Colbert bump Innovator's Dilemma Arianna Kindle Single Django</p>
                                 </div>
                             </div>
                         </div>
@@ -82,9 +78,7 @@ get_header();
                                 <div class="card-body">
                                     <h5 class="cat-title card-title">Caoimhe Calvert</h5>
                                     <p class="card-text"><medium class="text-muted">Managing Editor</medium></p>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                    <p class="card-text">Colbert bump Innovator's Dilemma Arianna Kindle Single Django</p>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +114,7 @@ get_header();
                 <br>
                 <br>
 
-                <a id="contact" class="cat-title">
+                <a id="contact" class="cat-title" style="color: black;">
                     <h2>Contact Us</h2>
                     <p>
                         <strong>Phone:</strong> (555) 555-5555
@@ -140,7 +134,7 @@ get_header();
                     <!-- <div class="shadow-sm card mb-4"> -->
                     <div class="card mb-4 py-4 text-center">
                         <div class="card-body">
-                            <h5 class="card-text">Newsletter Sign Up/Promo</h5>
+                            <h5 class="card-text" style="color: black;">Newsletter Sign Up/Promo</h5>
                         </div>
                     </div>
                     <div class="card mb-4 py-4 text-center">

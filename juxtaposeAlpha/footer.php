@@ -41,7 +41,7 @@
                        </div>
         </div>
           <div class="col-4">
-               <div class="text-left py-3">
+               <div class="text-left py-3 mr-0">
                <h4 id="footer-contact">Important Links</h4>
               <p class="copyright pt-3 pb-0"><a style="color: white;" href="/juxtaposeAlpha/?page_id=9">About</a></p>
                    <p class="copyright pb-0"><a style="color: white;" href="/juxtaposeAlpha/?page_id=9">Contact</a></p>
