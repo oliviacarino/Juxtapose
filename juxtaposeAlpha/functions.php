@@ -1,5 +1,4 @@
 <?php
-
 function juxtaposeAlpha_theme_support(){
     // Adds dynamic title tag support
     add_theme_support('title-tag');
@@ -52,7 +51,6 @@ function juxtaposeAlpha_register_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'juxtaposeAlpha_register_scripts');
-
 ?>
 
 <?php
@@ -81,7 +79,7 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 
 <?php
 //set image size for post thumbnail image
-set_post_thumbnail_size(510, 500);
+//set_post_thumbnail_size(510, 500);
 ?>
 
 
@@ -121,4 +119,3 @@ function my_register_sidebars() {
     ) );
     /* Repeat register_sidebar() code for additional sidebars. */
 }
-  

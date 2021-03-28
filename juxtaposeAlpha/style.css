@@ -63,15 +63,18 @@ h4,
 h5,
 h6 {
     color: var(--gray-dark);
-    font-weight: bold;
+    font-weight: 500;
 }
 
-h1, h2, h4, h5 {
-    font-family: 'linotype-sabon', helvetica;
+h1, h2 {
+    /* font-family: 'linotype-sabon', helvetica; */
+    font-family: Helvetica;
+    font-weight: 700;
 }
 
 .sabon-font {
-    font-family: 'linotype-sabon', helvetica;
+    /* font-family: 'linotype-sabon', helvetica; */
+    font-family: Helvetica;
     font-size: 1.3rem;
 }
 
@@ -139,7 +142,6 @@ h1, h2, h4, h5 {
     color: black;
     font-weight: 500;
     text-decoration: underline;
-    
 }
 
 .header {
@@ -252,9 +254,9 @@ h1, h2, h4, h5 {
 }
 
 .main-wrapper .container {
-     max-width: var(--content-max-width); 
-    padding-left: 8%;
-    padding-right: 8%;
+    max-width: var(--content-max-width); 
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .page-title {
     position:sticky;
@@ -268,15 +270,28 @@ h1, h2, h4, h5 {
 .page-title .heading {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--dark);
+    /* color: var(--dark); */
     margin-left: 1em;
 }
 
 .thumbnail-size {
-    height: 100px;
+    /* height: 100px; */
+    /* height: auto; */
+    /* width: auto; */
+    margin-right: 0px;
+    float:center;
+} 
+
+.img-div-parent {
+    height:auto;
     width: auto;
-    margin: 0 auto;
+    overflow:auto;
 }
+
+/*img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    /* width: auto; */
+    /* margin-right: 0px; */
+/* } */
 
 .footer {
     color: rgba(255, 255, 255, 0.7);
@@ -436,7 +451,7 @@ h1, h2, h4, h5 {
 }
 
 .content .blockquote {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Helvetica;
     border-left: 2px solid var(--gray-dark);
     font-size: 1.5rem
 }
@@ -473,12 +488,20 @@ h1, h2, h4, h5 {
 /* Sidebar Title */
 .widget-title {
     color: black;
-    font-family: 'Arial, Helvetica, sans-serif;'
+    /* font-family: 'Arial, Helvetica, sans-serif;' */
+    font-family: Helvetica;
 }
 
 .widget {
 	padding-top: 20px;
 	padding-bottom:  20px;
+}
+
+.widget ul {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    list-style-type: none;
+    margin-left: -36px;
 }
 
 /* Div Titles */
@@ -492,6 +515,8 @@ h1, h2, h4, h5 {
     font-size: 20px;
 }
 
+
+
 @media (prefers-reduced-motion: reduce) {
     .social-list a {
         transition: none
@@ -501,6 +526,13 @@ h1, h2, h4, h5 {
     }
 }
 
+
+/* .attachment-post-thumbnail {
+    display: none;
+} */
+/* .wp-post-image {
+    display:none;
+} */
 /* Mobile */
 /* @media (max-width: 480px) {
     

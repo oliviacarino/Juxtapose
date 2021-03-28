@@ -8,7 +8,7 @@ get_header();
     <div class="container">
         <div class="row">
         <a id="about">
-            <div class="col-9">
+            <div class="col-md-9">
                 <!-- <div class="card text-center py-3">
                         <div class="card-body">
                             <h5 class="card-title">About Juxtapose</h5>
@@ -39,7 +39,7 @@ get_header();
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="wp-content/themes/juxtaposeAlpha/assets/images/stockEmployee1.png"
+                                <img src="https://i.imgur.com/LnPvkFQ.png"
                                     class="card-img px-1 pt-1" alt="...">
                             </div>
                             <div class="col-md-8">
@@ -55,7 +55,7 @@ get_header();
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="wp-content/themes/juxtaposeAlpha/assets/images/stockEmployee2.jpg"
+                                <img src="https://i.imgur.com/kypZHe7.jpg"
                                     class="card-img px-1 pt-1" alt="...">
                             </div>
                             <div class="col-md-8">
@@ -71,7 +71,7 @@ get_header();
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="wp-content/themes/juxtaposeAlpha/assets/images/stockEmployee3.jpg"
+                                <img src="https://i.imgur.com/MUf1a7O.jpg"
                                     class="card-img px-1 pt-1" alt="...">
                             </div>
                             <div class="col-md-8">
@@ -129,7 +129,7 @@ get_header();
             
             </div>
 
-            <div class="col-3">
+            <div class="col-md-3">
                 <a class="cat-title" id="newsletter">
                     <!-- <div class="shadow-sm card mb-4"> -->
                     <div class="card mb-4 py-4 text-center">

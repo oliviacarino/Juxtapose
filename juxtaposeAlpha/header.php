@@ -24,7 +24,7 @@
 
 <body>
 
-    <header>
+    <header style="font-family: Helvetica;">
         <!-- Bootstrap Navwalker for Primary Nav -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" role="navigation">
             <div class="container mx-auto px-4">
@@ -72,7 +72,7 @@
 
 
     <!-- Category Nav -->
-    <header class="page-title theme-bg-light">
+    <header class="page-title theme-bg-light" style="font-size: 1.3rem; font-family: Helvetica;">
         
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom2" role="navigation">
             <div class="container">

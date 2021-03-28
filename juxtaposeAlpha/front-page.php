@@ -7,8 +7,8 @@ get_header();
     <div class="container">
         <!-- Row 1 -->
         <div class="row">
-            <div class="col-3">
-                <div class="shadow-sm card frontpage-div-header">
+            <div class="col-md-3">
+                <div class="shadow-sm card frontpage-div-header mb-3">
                     <h4 class="card-header text-center" style="color: black;">Top Stories</h4>
 
                     <?php
@@ -26,7 +26,7 @@ get_header();
                     <div class="card-body">
                         <div class="latest_news_cont">
                             <a href="<?php the_permalink() ?>">
-                                <?php the_post_thumbnail(); ?>
+                                <?php //the_post_thumbnail(); ?>
                             </a>
 
                             <a href="<?php the_permalink() ?>">
@@ -49,7 +49,7 @@ get_header();
 
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="card text-left shadow-sm">
 
                     <?php
@@ -67,7 +67,7 @@ get_header();
                     <div class="card-body">
                         <div class="latest_news_cont">
                             <!-- <a href="<?php the_permalink() ?>"> -->
-                            <div class="mb-2">
+                            <div class="mb-2 img-div-parent">
                                 <?php the_post_thumbnail(); ?>
                             </div>
                             <!-- </a> -->
@@ -95,7 +95,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-md-3">
                 <?php get_sidebar( 'one' ); ?>
             </div>
 
@@ -103,7 +103,7 @@ get_header();
 
         <!-- Row 2 -->
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <div class="card text-left shadow-sm mt-4">
 
                     <?php
@@ -119,11 +119,11 @@ get_header();
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
                     <div class="card-body">
-                        <div class="latest_news_cont">
+                        <!-- <div class="latest_news_cont"> -->
                             <!-- <a href="<?php the_permalink() ?>"> -->
                             <div class="mb-2">
-                                <div class="thumbnail-size mb-4">
-                                    <?php the_post_thumbnail('medium'); ?>
+                                <div class="mb-4 img-div-parent">
+                                    <?php the_post_thumbnail(); ?>
                                 </div>
                             </div>
                             <!-- </a> -->
@@ -137,7 +137,7 @@ get_header();
                             <div class="pt-5">
                                 <?php echo get_the_date( 'F j, Y' ); ?>
                             </div>
-                        </div>
+                        <!-- </div> -->
 
                     </div>
 
@@ -151,7 +151,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="card text-left shadow-sm mt-4 mb-4">
 
                     <?php
@@ -169,7 +169,7 @@ get_header();
                     <div class="card-body">
                         <div class="latest_news_cont">
                             <!-- <a href="<?php the_permalink() ?>"> -->
-                            <div class="mb-2">
+                            <div class="mb-2 img-div-parent">
                                 <?php the_post_thumbnail(); ?>
                             </div>
                             <!-- </a> -->
@@ -196,7 +196,7 @@ get_header();
 
                 </div>
             </div>
-            <div class="col-3" id="sidebar-two">
+            <div class="col-md-3" id="sidebar-two">
                 <?php get_sidebar( 'two' ); ?>
             </div>
 
@@ -209,7 +209,7 @@ get_header();
     <!-- Container 2 - Ad Space -->
     <div class="container">
         <div class="row">
-            <div class="col-9">
+            <div class="col-md-9">
                 <div class="card text-center shadow-sm py-3">
                     <div class="card-body">
                         <h5 class="card-title" style="color: black;">Ad Space</h5>
@@ -227,7 +227,7 @@ get_header();
         <div class="row mt-4">
 
             <!-- Local News Div -->
-            <div class="col-3">
+            <div class="col-md-3 mb-3">
                 <div class="card text-left shadow-sm pb-4">
                     <div class="card-header text-center sabon-font frontpage-div-header">
                         <strong>Local News</strong>
@@ -277,7 +277,7 @@ get_header();
             </div>
 
             <!-- Sports Div -->
-            <div class="col-3">
+            <div class="col-md-3 mb-3">
                 <div class="card text-left shadow-sm">
                     <div class="card-header text-center sabon-font frontpage-div-header">
                         <strong>Sports</strong>
@@ -327,7 +327,7 @@ get_header();
             </div>
 
             <!-- Education Div -->
-            <div class="col-3">
+            <div class="col-md-3 mb-3">
                 <div class="card text-left shadow-sm pb-4">
                     <div class="card-header text-center sabon-font pt-3 frontpage-div-header">
                         <strong>Education</strong>
@@ -350,7 +350,7 @@ get_header();
                     <div class="card-body pb-0">
                         <div class="latest_news_cont">
                             <a href="<?php the_permalink() ?>">
-                                <?php the_post_thumbnail(); ?>
+                                <?php //the_post_thumbnail(); ?>
                             </a>
 
                             <a href="<?php the_permalink() ?>">
@@ -375,7 +375,7 @@ get_header();
 
                 </div>
             </div>
-            <div class="col-3" id="sidebar-three">
+            <div class="col-md-3" id="sidebar-three">
                 <?php get_sidebar( 'three' ); ?>
             </div>
 
